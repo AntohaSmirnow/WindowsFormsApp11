@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace WindowsFormsApp11
 {
@@ -26,7 +26,7 @@ namespace WindowsFormsApp11
             {
                 using (StreamWriter sw = new StreamWriter(dlg.FileName, false, Encoding.Unicode))
                 {
-                    sw.WriteLine("Текст: " + textBox1.Text);
+                    sw.WriteLine( textBox1.Text);
                    
                 }
             }
